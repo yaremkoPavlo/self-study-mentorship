@@ -1,4 +1,5 @@
 <?php
+include 'swap.php';
 
 #bubble sort algorithm
 
@@ -16,12 +17,6 @@ function bubbleSort(&$arr) {
 			return;
 		}
 	}
-}
-
-function swap(&$a, &$b) {
-	$i = $a;
-	$a = $b;
-	$b = $i;
 }
 
 $arr = [2,7,4,1,5,3];

@@ -1,4 +1,5 @@
 <?php
+include 'swap.php';
 
 #selection sort algorithm
 
@@ -15,12 +16,6 @@ function selectionSort(&$arr) {
 			swap($arr[$i], $arr[$minI]);
 			
 	}
-}
-
-function swap(&$a, &$b) {
-	$i = $a;
-	$a = $b;
-	$b = $i;
 }
 
 $arr = [3,1,2,6,7,23,98,4,8,5];
