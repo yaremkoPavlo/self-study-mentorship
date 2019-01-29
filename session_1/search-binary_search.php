@@ -3,7 +3,7 @@
 function binarySearch($el, $arr) {
 	$start = 0;
 	$end = count($arr) - 1;
-	while ($end != $start) {
+	while ($end >= $start) {
 		$mid = mid($start, $end);
 		if ($el == $arr[$mid])
 			return $mid;
